@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Manrope', sans-serif;
+  font-size: 2.8rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--DarkBlue);
+}
+.wrapper{
+  position: relative;
+  margin: 10% auto;
+  width: 30%;
+  min-height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  background-color: var(--DarkGrayishBlue);
+  border-radius: 1rem;
+}
+h1{
+  font-size: 1rem;
+  color: var(--NeonGreen);
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: .5rem;
+  letter-spacing: .2rem;
+}
+p{
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+.img{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.img img{
+  width: 100%;
+}
+
+.icon{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--NeonGreen);
+  position: absolute;
+  top: 86%;
+  text-align: center;
+  padding-top: .8%;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon img{
+  display: block;
+  width: 2rem;
+  height: 2rem;
+
+}
+
+@media screen and (max-width: 480px){
+  .wrapper{
+    width: 80%;
+    
+  }
+}
+
+
